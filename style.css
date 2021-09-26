@@ -1,0 +1,326 @@
+/*  ---------------
+	TOUTE LA PAGE :
+    ---------------
+    
+	 Couleur du fond: LightYellow (ou autre chose !) 
+*/
+
+body {
+	background-color:white;
+}
+
+
+
+
+/*  ----------------
+	PARTIE EN-TETE :
+    ----------------
+    
+	Couleur du fond: Brown (ou autre chose !)
+	Couleur du texte: LightYellow (ou autre chose !) 
+	Taille des caractère : très gros (xx-large)
+	Texte centré
+*/
+
+header {
+	font-family: "Copperplate",fantasy;
+	color:#000080;
+	font-size: 40px;
+	text-align: center;
+}
+
+section .profilepic{
+	height:50mm; 
+	width: 50mm;
+	border: 1px solid black;
+	vertical-align: middle;
+	border-radius:50%;
+	text-align:center;
+
+	
+}
+
+section .publipic{
+	width:10mm;
+	height:10mm;
+	border-radius:50%;
+	vertical-align: middle;
+	border: 1px solid black;
+	margin-right:5px;
+	text-align:center;
+
+	
+}
+
+
+
+
+/*  ---------------------
+	PARTIE PIED DE PAGE :
+    ---------------------
+    
+	Caractères italiques et de petite taille (small)
+	Texte aligné à droite
+	Marge extérieure de 100px
+	Bordure fine, en pointillés et grise, uniquement supérieure
+	Hauteur de l'image: 50px
+*/
+
+footer {
+	font-style: italic;
+	font-size: small;	
+	text-align: right;
+	margin-top: 100px;
+	border-top: 1px dotted Grey; 
+}
+
+footer img {
+	height: 50px;
+}
+
+
+/*  -------------
+	PARTIE MENU :
+    -------------
+
+	Couleur du fond: Brown (ou autre chose !)
+	Couleur du texte: LightYellow (ou autre chose !) 
+	Bordure fine (1px solid) de couleur Orange
+	Position fixée à 100px du haut et 8px du bord gauche de la fenêtre
+		(menu toujours visible à sa position qd on fait défiler la page vers le bas
+		
+	
+	Marge intérieure des listes non numérotées (ul) : 5pt
+	
+	
+	Description des listes (li) : 
+		pas de symbole
+		marge intérieure gauche de 5pt
+		
+		couleur des liens : Salmon (ou autre chose !)
+*/
+.topbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000080;
+}
+
+.topbar li {
+  float: left;
+  margin-right: 25px;
+  margin-left:26px;
+}
+
+.topbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  position: sticky;
+}
+.topbar a:hover:not(.active) {
+  background-color: #FB9B50;
+  color: black;
+}
+
+.topbar .active {
+	
+  background-color: pink;
+  color: white;
+  
+  
+}
+
+
+div#pub {
+	border: 1px solid #957DAD;
+	border-left: 4px solid #957DAD;
+	padding:  5px;
+	background-color: #FFDFD3;
+	border-radius: 5px;
+	
+}
+
+h4#datepub {
+	font-size: small;	
+}
+
+div#editprofile {
+	border-color: #000080;
+	border:1px solid black;
+	width:70%;
+	margin-left: 15%;
+
+
+	
+}
+
+div#login {
+	border-radius:20px;
+	border:1px solid #5B84C4 ;
+	width:70%;
+	margin-left: 15%;
+	background-color: #5B84C4;
+
+	
+}
+div.noti {
+	
+	border:1px solid black ;
+	
+
+	
+}
+.login{
+	color:white;
+}
+
+
+/*  ----------------------
+	PARTIE CORPS DE PAGE :
+    ----------------------
+	
+	Position *relative* (juste après ce qui se qui se trouve avant dans le .html)
+	Placement à 10px du haut et à 120 du bord gauche
+	Occupe 80% de la largeur de la fenêtre
+	
+	Titre de niveau 1 en Brown et en taille x-large
+	Titre de niveau 2 en Brown et en taille large
+	Titre de niveau 3 en Brown et en taille médium et décalé vers la droite de 20pt
+	
+	Paragraphes mis en évidence : 
+		caractères pas en gras (normal) de couleur FireBrick (ou autre !)
+
+	Liens et ancres :
+		couleur des liens non survolés : Brown, pas soulignés
+		couleur des liens survolés : salmon, soulignés
+
+
+	Bordures du tableau collées (pas d'espace entre les cases)
+	
+	Cases du tableau : 
+		une bordure fine en trait plein gris
+		une marge intérieure de 2pt
+		texte centré
+*/
+section {
+	position: relative;
+	top: 10px;
+	left: 120px;
+	right:20px;
+	width: 80%;
+	text-align:center;
+
+}
+div#mes {
+	border: 1px solid black;
+	width: 50%;
+	text-align: center;
+	margin-left: 25%;
+	
+}
+div.pub {
+	background-color:#FB9B50; 
+	margin-bottom:10px;
+	padding-left:50px;
+	border-radius:20px;
+	
+	text-align:left;
+
+	
+}
+div.publier {
+	text-align:left;
+	padding-left:10px;
+	
+}
+
+
+div.comm {               
+	background-color:#5B84C4;
+	width:80%;
+	padding-left:30px;
+	border-radius:20px;
+	margin-left:20px;
+	text-align:left;
+	
+}
+
+
+section h1 {
+	color: #000080;
+	font-size: x-large;
+} 
+
+section h2 {
+	color: brown;
+	font-size: large;
+} 
+
+section h3 {
+	color: brown;
+	font-size: medium;
+	margin-left: 20pt;
+} 
+
+section strong {
+	font-weight: normal;
+	color: FireBrick;	
+}
+
+section a {
+	color: Brown;
+	text-decoration: none;
+}
+
+section a:hover {
+	color: Salmon;
+	text-decoration: underline;
+}
+
+section table {
+	border-collapse: collapse;
+}
+
+section td {
+	border: 1px solid Grey;
+	padding: 2pt;
+	text-align: center;
+}
+
+
+/* texte très important */
+section span.tresImportant {
+	font-weight: bold;
+	color: Crimson;
+}
+
+
+
+
+
+
+
+
+/* Pour les formulaires (sujet 1) */
+
+label {
+    display: inline-block;
+    width: 100px;
+    margin-right: 5px;
+    vertical-align: top;
+    text-align: right;
+	font-size: normal;
+}
+
+input {
+    vertical-align: top;
+}
+
+input[type=submit] {
+    margin-left: 105px;
+    text-align: right;
+}
